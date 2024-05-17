@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #ffffff;
+}
+
+.dark-theme {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #000000;
+}
+
+.logoBlock {
+    text-align: center;
+    background: red;
+    display: flex;
+}
+
+.logo {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.cafeName {
+    transform: translate(0, 25%);
+    margin-left: 50px;
+}
+
+.colorText {
+    color: white;
+}
+
+.left {
+    float: left;
+    width: 50%;
+}
+.right {
+    float: right;
+    width: 50%;
+}
+
+.weather {
+    height: 2000px;
+}
+
+.capacity {
+    height: 2000px;
+}
+
+.logoWeather {
+    margin-top: 20px;
+    margin-left: 200px;
+    height: 80px;
+    width: 80px;
+}
+
+.logoCapacity {
+    margin-top: 20px;
+    margin-left: 200px;
+    height: 80px;
+    width: 80px;
+}
+
+.weatherTxt {
+    margin-top: 40px;
+    position: absolute;
+    margin-left: 30px;
+}
+
+.capacityTxt {
+    margin-top: 40px;
+    position: absolute;
+    margin-left: 30px;
+}
+
+table {
+    margin-left: 30px;
+    margin-top: 40px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid black;
+    width: 600px;
+}
+
+th, td, tr {
+    border: 2px solid black;
+    padding: 30px 20px;
+}
+
+h3 {
+    margin-left: 30px;
+}
+
+.darkMode {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    margin-left: 97%;
+    transform: translate(0, 50%);
+}
+
+.coffee {
+    margin-left: 25%;
+}
