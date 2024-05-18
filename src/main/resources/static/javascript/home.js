@@ -1,10 +1,8 @@
-function toggleTheme() {
-    var body = document.forms;
-    var themeIcon = document.querySelector('.theme-icon');
-    body.classList.toggle('dark-theme');
-    if (body.classList.contains('dark-theme')) {
-        themeIcon.src = 'dark-theme-icon.png';
+document.getElementById('themeToggle').addEventListener('click', function() {
+    const currentTheme = document.body.className;
+    if (currentTheme === 'light-theme') {
+        document.body.className = 'dark-theme';
     } else {
-        themeIcon.src = 'light-theme-icon.png';
+        document.body.className = 'light-theme';
     }
-}
+});
