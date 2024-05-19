@@ -55,59 +55,6 @@ body.dark-theme {
     color: white;
 }
 
-.left {
-    float: left;
-    width: 50%;
-}
-.right {
-    float: right;
-    width: 50%;
-}
-
-.logoWeather {
-    margin-top: 20px;
-    margin-left: 200px;
-    height: 80px;
-    width: 80px;
-}
-
-.logoCapacity {
-    margin-top: 20px;
-    margin-left: 200px;
-    height: 80px;
-    width: 80px;
-}
-
-.weatherTxt {
-    margin-top: 40px;
-    position: absolute;
-    margin-left: 30px;
-}
-
-.capacityTxt {
-    margin-top: 40px;
-    position: absolute;
-    margin-left: 30px;
-}
-
-table {
-    margin-left: 30px;
-    margin-top: 40px;
-    text-align: center;
-    border-collapse: collapse;
-    border: 2px solid black;
-    width: 600px;
-}
-
-th, td, tr {
-    border: 2px solid black;
-    padding: 30px 20px;
-}
-
-h3 {
-    margin-left: 30px;
-}
-
 .theme-button {
     position: absolute;
     padding: 0px 0px;
@@ -118,12 +65,6 @@ h3 {
 .moon {
     height: 50px;
     width: 50px;
-}
-
-.coffee {
-    margin-left: 25%;
-    width: 355px;
-    height: 355px;
 }
 
 a {
@@ -138,4 +79,28 @@ a {
     border-radius: 10px;
     padding: 10px;
     border: 1px solid rgb(255, 255, 255);
+}
+
+.kofe {
+    margin-left: 41%;
+}
+
+.gr1 {
+    margin-left: 45%;
+}
+
+.pic {
+    margin-left: 28%;
+}
+
+.pic1 {
+    margin-left: 34%;
+}
+
+.pic2 {
+    margin-left: 25%;
+}
+
+.pic3 {
+    margin-left: 20%;
 }

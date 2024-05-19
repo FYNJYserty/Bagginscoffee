@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href='/static/css/statistics.css' th:href="@{/css/statistics.css}">
+
+    <title>Главная</title>
+</head>
+<body>
+
+    <form class="logoBlock">
+        <img src="/static/images/foreground.png" th:src="@{/images/foreground.png}" class="foreground">
+        <img src="/static/images/logo.png" th:src="@{/images/logo.png}" class="logo">
+
+        <h1 class="cafeName">BAGGINS COFFEE <span class="colorText">Statistics</span></h1>
+        <a href="/home">Forecast</a>
+        <a href="/faq">Faq</a>
+        <div class="theme-button" id="themeToggle"><img src="/static/images/moon.png" th:src="@{/images/moon.png}" class="moon"></div>
+    </form>
+
+    <h1 class="kofe">Процесс разработки</h1>
+    <h2 class="gr1">График 1</h2>
+    <img src="/static/graphics/graph1.png" th:src="@{/graphics/graph1.png}" class="pic">
+    <h2 class="gr1">График 2</h2>
+    <img src="/static/graphics/graph2.png" th:src="@{/graphics/graph2.png}" class="pic1">
+    <h2 class="gr1">График 3</h2>
+    <img src="/static/graphics/graph3.png" th:src="@{/graphics/graph3.png}" class="pic2">
+    <h2 class="gr1">График 4</h2>
+    <img src="/static/graphics/graph4.png" th:src="@{/graphics/graph4.png}" class="pic3">
+    <h2 class="gr1">График 5</h2>
+    <img src="/static/graphics/graph5.png" th:src="@{/graphics/graph5.png}" class="pic1">
+    <h2 class="gr1">График 6</h2>
+    <img src="/static/graphics/graph6.png" th:src="@{/graphics/graph6.png}" class="pic1">
+
+
+    <script type="text/javascript" src='/static/javascript/darkTheme.js' th:src="@{/javascript/darkTheme.js}"></script>
+</body>
+</html>

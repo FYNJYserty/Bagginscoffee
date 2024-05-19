@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href='/static/css/home.css' th:href="@{/css/home.css}">
@@ -13,6 +13,8 @@
         <img src="/static/images/logo.png" th:src="@{/images/logo.png}" class="logo">
 
         <h1 class="cafeName">BAGGINS COFFEE <span class="colorText">Forecast</span></h1>
+        <a href="/statistics">Statistics</a>
+        <a href="/faq">Faq</a>
         <div class="theme-button" id="themeToggle"><img src="/static/images/moon.png" th:src="@{/images/moon.png}" class="moon"></div>
 
     </form>
@@ -25,70 +27,56 @@
                 <thead>
                 <tr>
                     <th></th>
-                    <th>Понедельник</th>
-                    <th>Вторник</th>
-                    <th>Среда</th>
-                    <th>Четверг</th>
-                    <th>Пятница</th>
-                    <th>Суббота</th>
-                    <th>Воскресенье</th>
+                    <th th:text="*{parser.dateWth[0]}"></th>
+                    <th th:text="*{parser.dateWth[1]}"></th>
+                    <th th:text="*{parser.dateWth[2]}"></th>
+                    <th th:text="*{parser.dateWth[3]}"></th>
+                    <th th:text="*{parser.dateWth[4]}"></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>Погода</td>
-                    <td>lxhyih</td>
-                    <td>9a5j8k</td>
-                    <td>bhegj</td>
-                    <td>r1ldp2hv</td>
-                    <td>bhegj</td>
-                    <td>r1ldp2hv</td>
-                    <td>bhegj</td>
+                    <td th:text="*{parser.trash[1]}"></td>
+                    <td th:text="*{parser.trash[7]}"></td>
+                    <td th:text="*{parser.trash[13]}"></td>
+                    <td th:text="*{parser.trash[19]}"></td>
+                    <td th:text="*{parser.trash[25]}"></td>
                 </tr>
                 <tr>
-                    <td>Т (мин)</td>
-                    <td>wbflm7</td>
-                    <td>obcpzs</td>
-                    <td>g7t40d</td>
-                    <td>nrm4to</td>
-                    <td>bhegj</td>
-                    <td>r1ldp2hv</td>
-                    <td>bhegj</td>
+                    <td>t°C</td>
+                    <td th:text="*{parser.trash[2]}"></td>
+                    <td th:text="*{parser.trash[8]}"></td>
+                    <td th:text="*{parser.trash[14]}"></td>
+                    <td th:text="*{parser.trash[20]}"></td>
+                    <td th:text="*{parser.trash[26]}"></td>
                 </tr>
                 <tr>
-                    <td>Т (макс)</td>
-                    <td>a0acfb</td>
-                    <td>cov9mj</td>
-                    <td>cx2sk9</td>
-                    <td>6tcatt</td>
-                    <td>bhegj</td>
-                    <td>r1ldp2hv</td>
-                    <td>bhegj</td>
+                    <td>Давление</td>
+                    <td th:text="*{parser.trash[3]}"></td>
+                    <td th:text="*{parser.trash[9]}"></td>
+                    <td th:text="*{parser.trash[15]}"></td>
+                    <td th:text="*{parser.trash[21]}"></td>
+                    <td th:text="*{parser.trash[27]}"></td>
                 </tr>
                 <tr>
-                    <td>Влажность (макс)</td>
-                    <td>zqnaz</td>
-                    <td>xn4w5</td>
-                    <td>b8pqr7</td>
-                    <td>g3hm7</td>
-                    <td>bhegj</td>
-                    <td>r1ldp2hv</td>
-                    <td>bhegj</td>
+                    <td>Влажность</td>
+                    <td th:text="*{parser.trash[4]}"></td>
+                    <td th:text="*{parser.trash[10]}"></td>
+                    <td th:text="*{parser.trash[16]}"></td>
+                    <td th:text="*{parser.trash[22]}"></td>
+                    <td th:text="*{parser.trash[28]}"></td>
                 </tr>
                 <tr>
-                    <td>Ветер (макс)</td>
-                    <td>p6dflr</td>
-                    <td>jjd90t</td>
-                    <td>wcl8jn</td>
-                    <td>03jip6</td>
-                    <td>bhegj</td>
-                    <td>r1ldp2hv</td>
-                    <td>bhegj</td>
+                    <td>Ветер</td>
+                    <td th:text="*{parser.trash[5]}"></td>
+                    <td th:text="*{parser.trash[11]}"></td>
+                    <td th:text="*{parser.trash[17]}"></td>
+                    <td th:text="*{parser.trash[23]}"></td>
+                    <td th:text="*{parser.trash[29]}"></td>
                 </tr>
                 </tbody>
             </table>
-            <h1 class="weatherTxt">Чистая прибыль</h1>
-            <a href="tel:88006007015" class="phone">8-800-600-70-15</a>
         </form>
     </div>
 
@@ -99,33 +87,28 @@
             <table class="capacityTable">
                 <thead>
                 <tr>
-                    <th>Понедельник</th>
-                    <th>Вторник</th>
-                    <th>Среда</th>
-                    <th>Четверг</th>
-                    <th>Пятница</th>
-                    <th>Суббота</th>
-                    <th>Воскресенье</th>
+                    <th th:text="*{parser.dateWth[0]}"></th>
+                    <th th:text="*{parser.dateWth[1]}"></th>
+                    <th th:text="*{parser.dateWth[2]}"></th>
+                    <th th:text="*{parser.dateWth[3]}"></th>
+                    <th th:text="*{parser.dateWth[4]}"></th>
+
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>tg9dic</td>
-                    <td>0miy0n</td>
-                    <td>q2oewq</td>
-                    <td>6hjjmc</td>
-                    <td>cqjmpk</td>
-                    <td>6hjjmc</td>
-                    <td>cqjmpk</td>
+                    <td th:text="*{prediction.getPrediction(parser.toDigit(parser.trash[2]), parser.trash[3], parser.trash[4].replace('%', ''))}"></td>
+                    <td th:text="*{prediction.getPrediction(parser.toDigit(parser.trash[8]), parser.trash[9], parser.trash[10].replace('%', ''))}"></td>
+                    <td th:text="*{prediction.getPrediction(parser.toDigit(parser.trash[14]), parser.trash[15], parser.trash[16].replace('%', ''))}"></td>
+                    <td th:text="*{prediction.getPrediction(parser.toDigit(parser.trash[20]), parser.trash[21], parser.trash[22].replace('%', ''))}"></td>
+                    <td th:text="*{prediction.getPrediction(parser.toDigit(parser.trash[26]), parser.trash[27], parser.trash[28].replace('%', ''))}"></td>
                 </tr>
                 </tbody>
             </table>
             <h3>Plan your ideal meeting</h3>
             <img src="/static/images/coffee.png" th:src="@{/images/coffee.png}" class="coffee">
-            <h1 class="capacityTxt">Чистая прибыль</h1>
-            <a href="mailto:info@baggins.ru" class="email">info@baggins.ru</a>
         </form>
     </div>
-    <script type="text/javascript" src='/static/javascript/home.js' th:src="@{/javascript/home.js}"></script>
+    <script type="text/javascript" src='/static/javascript/darkTheme.js' th:src="@{/javascript/darkTheme.js}"></script>
 </body>
 </html>

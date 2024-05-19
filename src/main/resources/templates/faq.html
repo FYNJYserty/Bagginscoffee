@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href='/static/css/faq.css' th:href="@{/css/faq.css}">
+
+    <title>Главная</title>
+</head>
+<body>
+
+    <form class="logoBlock">
+        <img src="/static/images/foreground.png" th:src="@{/images/foreground.png}" class="foreground">
+        <img src="/static/images/logo.png" th:src="@{/images/logo.png}" class="logo">
+
+        <h1 class="cafeName">BAGGINS COFFEE <span class="colorText">Faq</span></h1>
+        <a href="/statistics">Statistics</a>
+        <a href="/home">Forecast</a>
+        <div class="theme-button" id="themeToggle"><img src="/static/images/moon.png" th:src="@{/images/moon.png}" class="moon"></div>
+    </form>
+
+    <p><span>Model[xy]</span> – where: X can take coffee shop numbers from 1,2,3, Y can take 1 for predicting sales, 2 for predicting the number of orders</p>
+    <p><span>Temperature00</span> – defines temperature at 00:00</p>
+    <p><span>Temperature03</span> – defines temperature at 03:00</p>
+    <p><span>Temperature06</span> – defines temperature at 06:00</p>
+    <p><span>Temperature09</span> – defines temperature at 09:00</p>
+    <p><span>Temperature12</span> – defines temperature at 12:00</p>
+    <p><span>Temperature15</span> – defines temperature at 15:00</p>
+    <p><span>Temperature18</span> – defines temperature at 18:00</p>
+    <p><span>Temperature21</span> – defines temperature at 21:00</p>
+    <p><span>Atmospheric pressure normalized to mean sea level00 [defolt = 758]</span> – defines atmospheric pressure at 00:00</p>
+    <p><span>Atmospheric pressure normalized to mean sea level03 [defolt = 758]</span> – defines atmospheric pressure at 03:00</p>
+    <p><span>Atmospheric pressure normalized to mean sea level06 [defolt = 758]</span> – defines atmospheric pressure at 06:00</p>
+    <p><span>Atmospheric pressure normalized to mean sea level09 [defolt = 758]</span> – defines atmospheric pressure at 09:00</p>
+    <p><span>Atmospheric pressure normalized to mean sea level12 [defolt = 758]</span> – defines atmospheric pressure at 12:00</p>
+    <p><span>Atmospheric pressure normalized to mean sea level15 [defolt = 758]</span> – defines atmospheric pressure at 15:00</p>
+    <p><span>Atmospheric pressure normalized to mean sea level18 [defolt = 758]</span> – defines atmospheric pressure at 18:00</p>
+    <p><span>Atmospheric pressure normalized to mean sea level21 [defolt = 758]</span> – defines atmospheric pressure at 21:00</p>
+    <p><span>Relativehumidity00 [defolt = 80]</span> – defines humidity at 00:00</p>
+    <p><span>Relativehumidity03 [defolt = 80]</span> – defines humidity at 03:00</p>
+    <p><span>Relativehumidity06 [defolt = 80]</span> – defines humidity at 06:00</p>
+    <p><span>Relativehumidity09 [defolt = 80]</span> – defines humidity at 09:00</p>
+    <p><span>Relativehumidity12 [defolt = 80]</span> – defines humidity at 12:00</p>
+    <p><span>Relativehumidity15 [defolt = 80]</span> – defines humidity at 15:00</p>
+    <p><span>Relativehumidity18 [defolt = 80]</span> – defines humidity at 18:00</p>
+    <p><span>Relativehumidity21 [defolt = 80]</span> – defines humidity at 21:00</p>
+    <p><span>Snowdepth09 [defolt = 0]</span> – defines snow depth at 09:00</p>
+
+
+
+    <script type="text/javascript" src='/static/javascript/darkTheme.js' th:src="@{/javascript/darkTheme.js}"></script>
+</body>
+</html>
